@@ -1,0 +1,277 @@
+@import "UI.scss";
+
+@mixin presentationVignette {
+        display: flex;
+        font-size: 3.3em;
+        font-family: $Police1__Bold;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $backgroundGreyLighter;
+        position: relative;
+        width: 85%;
+        margin-right: 5%;
+        margin-left: auto;
+        border-radius: 60px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        box-shadow: 0px 2px 20px #c2c2c2;
+        margin-bottom: 2em;
+        &__pastille{
+            position:absolute;
+            left: -5%;
+            background-color: $primaryColor;
+            border-radius: 100px;
+            p{
+                color: white;
+                margin: 0.2em;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+
+
+            }
+            
+
+
+        }
+        &__logo{
+            margin-left: 5%;
+            font-size: 1.3em;
+            color: gray;
+        }
+}
+@mixin dispoTextFooter{
+    color: white;
+        display: flex;
+        font-size: 3.2em;
+        font-family: $Police1;
+        align-items: center;
+        margin-left: 5%;
+        i{
+            
+            margin-right: 5%;
+        }
+}
+
+
+
+body{
+    margin: 0em;
+    margin-right: 0em;
+}
+header{
+    
+    position: relative;
+    padding-bottom: 2em;
+    box-shadow: 0px 2px 10px grey;
+    overflow-y: hidden;
+
+    .LogoCentral {
+        margin-top: 4em;
+        margin-bottom: 2em;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .LogoCentral .LogoCentral__image{
+        width: 50%;
+    
+        
+    }
+
+}
+
+.localisation{
+    font-family: $Police1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundGreyDarker;
+        &__iconLocalisation{
+            font-size: 3em;
+
+        }
+        &__textLocalisation{
+            margin-left: 2em;
+            font-size: 2.9em;
+        }
+
+}
+.AnnonceSlogan{
+    background-color: $backgroundGreyLighter;
+    margin-top: 0em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__Slogan{
+        margin-top: 0em;
+        font-family: $Police1__Bold;
+        margin-top: 2em;
+        font-size: 4em;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+    }
+    &__sousTitre{
+        font-family: $Police1__Light;
+        font-size: 3em;
+        margin-left: 10%;
+    }
+    &__btnExplorerNosRestaurants{
+        background: linear-gradient(#FF79DA,#9356DC);
+        width: 70%;
+        border-radius: 90px;
+        margin-top: 3em;
+        margin-bottom: 5em;
+        p{
+            font-size: 3em;
+            text-align: center;
+            color: white;
+            font-family: $Police1;
+        }
+
+    }
+}
+.TitreFonctionnement{
+    font-size: 4em;
+    font-family: $Police1__Bold;
+    margin-left: 10%;
+    margin-bottom: 2em
+}
+.vignettesFonctionnement{
+
+
+    &__ChoixRestaurant{
+        @include presentationVignette;
+
+
+
+        
+
+    }
+    &__CompositionMenu{
+        @include presentationVignette();
+    }
+    &__Degustez{
+        @include presentationVignette(
+        );
+        background-color: rgb(245, 236, 254);
+    }
+    
+
+    
+
+
+}
+
+
+.Restaurants{
+    background-color: $backgroundGreyLighter;
+    padding-top: 5em;
+
+   
+    &__titre{
+        font-family: $Police1__Bold;
+        font-size: 5em;
+        margin-left: 10%;
+        margin-bottom: 2em;
+
+    }
+    a{
+    color: black;
+        text-decoration: none;
+    }
+    &__vignette{
+        margin-bottom: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        border-radius: 40px;
+        width: 90%;
+        background-color: white;
+        box-shadow: 0px 5px 10px #C2C2C2;
+        height: 50em;
+        &__image{
+            overflow: hidden;
+            height: 70%;
+            position: relative;
+            img{
+                min-height:100% ;
+                width: 100%;
+            }
+            &__Nouveau{
+                position: absolute;
+                right: 3%;
+                top: 5%;
+                background-color: rgb(158,227,208);
+                font-family: $Police1;
+                font-size: 2.4em;
+
+                border-radius: 14px;
+                p{
+                    color: opacity($color: #C2C2C2);
+                    margin: 0.5em;
+                }
+            }
+        }
+        &__description{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10%;
+            &__text{
+                &__Nom{
+                    font-size: 4em;
+                    font-family: $Police1__Bold;
+                    margin-bottom: 0em;
+                }
+                &__Adresse{
+                    font-family: $Police1__Light;
+                    font-size: 3.3em;
+                    margin-top: 0em;
+                }
+            }
+            &__logo{
+                color: black;
+                font-size: 6em;
+                font-weight:2em ;
+                margin-right: 5%;
+
+            }
+        }
+
+    }
+}
+footer{
+    background-color: rgb(53,53,53);
+    padding-top: 1em;
+    margin-top: 2em;
+    width: 100%;
+    .ImageFooter{
+        margin-top: 2em;
+
+        margin-left: 5%;
+        height: 4em;
+        img{
+            color: white;
+            height: 100%;
+        }
+    }
+    .Proposer{
+        @include dispoTextFooter;
+        
+
+    }
+    .Partenaire{
+        @include dispoTextFooter;
+
+    }
+    
+    .Mention{
+        @include dispoTextFooter();
+        
+    }
+    .Contact{
+        @include dispoTextFooter;
+    }
+      
+}

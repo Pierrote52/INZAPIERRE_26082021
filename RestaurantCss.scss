@@ -1,0 +1,219 @@
+
+@import  "./Ui.scss";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf');
+}
+
+
+@mixin dispoTextFooter{
+    color: white;
+        display: flex;
+        font-size: 3.2em;
+        font-family: $Police1;
+        align-items: center;
+        margin-left: 5%;
+        i{
+            
+            margin-right: 5%;
+        }
+}
+
+header{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    .LogoBackSparow{
+        font-size: 3em;
+        margin-right: 30%;
+
+    }
+    .LogoCentral{
+        img{
+            height: 5em;
+        }
+    }
+}
+body{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+}
+.PhotoRestaurant{
+    width: 100%;
+    height: 50em;
+    background-color: blue;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        height: 100%;
+    }
+}
+.Menu{
+    position: absolute;
+    top: 90%;
+    z-index: 2;
+    margin: 0em;
+    background-color: rgb(246,246,246);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    &__NomEtCoeur{
+        display: flex;
+        justify-content: space-around;
+        font-size: 3em;
+        align-items: center;
+        i{
+            font-size: 2em;
+        }
+        
+
+    }
+    &__Cath{
+
+
+        margin-left: 5%;
+        &__text{
+
+        font-family: $Police1__Light;
+        font-size: 3.5em;
+        margin-bottom: 0em;
+
+        }
+        &__soulignement{
+            margin-top: 0em;
+            height: 10px;
+            width: 15%;
+            background-color: $terciaryColor;
+        }
+        
+
+    }
+    &__Vignette{
+        display: flex;
+        width: 90%;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 40px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0px 8px 20px #C2C2C2;
+        justify-content: space-between;
+                &:hover{
+                    .Menu__Vignette__ValidatorEtPrix__Validator{
+                        width: 3em;
+                    }
+
+                }
+        
+        
+
+        &__titre{
+            font-size: 3em;
+            font-family: $Police1__Bold;
+            margin-left: 1em;
+            
+            p{
+                margin-bottom: 0em;
+
+            }
+
+        }
+        &__Description{
+            font-size: 2.5em;
+            font-family: $Police1;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-top: 0em;
+            
+        }
+       
+    &__ValidatorEtPrix{
+        
+        display: flex;
+        margin-bottom: 0em;
+        align-items: flex-end;
+
+        &__Prix{
+            p{
+                font-family: $Police1__Light;
+                font-weight: 700;
+                font-size: 3em;
+                margin-right: 0.5em;
+                margin-bottom: 20%;}
+            
+
+        }
+
+        &__Validator{
+            height: 100%;
+            width:0em;
+            background-color: lawngreen;
+        }
+        
+       
+    } 
+
+    }
+}
+.Bouton{
+    background: linear-gradient(#FF79DA,#9356DC);
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 90px;
+        margin-top: 3em;
+        margin-bottom: 5em;
+        p{
+            font-size: 3em;
+            text-align: center;
+            color: white;
+            font-family: $Police1;
+        }
+
+}
+footer{
+        background-color: rgb(53,53,53);
+        padding-top: 1em;
+        margin-top: 2em;
+        width: 100%;
+        .ImageFooter{
+            margin-top: 2em;
+    
+            margin-left: 5%;
+            height: 4em;
+            img{
+                color: white;
+                height: 100%;
+            }
+        }
+        .Proposer{
+            @include dispoTextFooter;
+            
+    
+        }
+        .Partenaire{
+            @include dispoTextFooter;
+    
+        }
+        
+        .Mention{
+            @include dispoTextFooter();
+            
+        }
+        .Contact{
+            @include dispoTextFooter;
+        }
+          
+    }
