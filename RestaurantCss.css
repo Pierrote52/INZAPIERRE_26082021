@@ -31,8 +31,9 @@ header {
 }
 
 header .LogoBackSparow {
-  font-size: 3em;
-  margin-right: 30%;
+  font-size: 4em;
+  margin-right: 20%;
+  margin-left: 5%;
 }
 
 header .LogoCentral img {

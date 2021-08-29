@@ -26,16 +26,21 @@ header{
     display: flex;
     align-items: center;
     margin-bottom: 5%;
-    .LogoBackSparow{
-        font-size: 3em;
-        margin-right: 30%;
+    
+        .LogoBackSparow{
+            font-size: 4em;
+            margin-right: 20%;
+            margin-left: 5%;
+        }
+        
 
-    }
+    
     .LogoCentral{
         img{
             height: 5em;
         }
     }
+    
 }
 body{
     position: relative;
