@@ -5,6 +5,10 @@
     font-family: 'Roboto';
     src: url('Roboto/Roboto-Regular.ttf');
 }
+@font-face {
+    font-family: 'Shrikland';
+    src: url('Shrikland/Shrikhand-Regular.ttf');
+}
 
 
 @mixin dispoTextFooter{
@@ -31,6 +35,12 @@ header{
             font-size: 4em;
             margin-right: 20%;
             margin-left: 5%;
+            color: black;
+            a{
+                color: black;
+            text-decoration: none;
+
+            }
         }
         
 
@@ -74,8 +84,9 @@ body{
     &__NomEtCoeur{
         display: flex;
         justify-content: space-around;
-        font-size: 3em;
+        font-size: 2.4em;
         align-items: center;
+        font-family: 'Shrikland';
         i{
             font-size: 2em;
         }
@@ -137,8 +148,7 @@ body{
             font-size: 2.5em;
             font-family: $Police1;
             display: flex;
-            justify-content: space-around;
-            margin-left: 1em;
+            margin-left: 1.2em;
             margin-right: 1em;
             margin-top: 0em;
             

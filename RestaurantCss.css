@@ -18,6 +18,11 @@
   src: url("Roboto/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Shrikland';
+  src: url("Shrikland/Shrikhand-Regular.ttf");
+}
+
 header {
   width: 100%;
   margin-top: 5%;
@@ -34,6 +39,12 @@ header .LogoBackSparow {
   font-size: 4em;
   margin-right: 20%;
   margin-left: 5%;
+  color: black;
+}
+
+header .LogoBackSparow a {
+  color: black;
+  text-decoration: none;
 }
 
 header .LogoCentral img {
@@ -90,10 +101,11 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 3em;
+  font-size: 2.4em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Shrikland';
 }
 
 .Menu__NomEtCoeur i {
@@ -155,9 +167,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-left: 1em;
+  margin-left: 1.2em;
   margin-right: 1em;
   margin-top: 0em;
 }
