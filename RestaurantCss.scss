@@ -124,9 +124,14 @@ body{
         overflow: hidden;
         box-shadow: 0px 8px 20px #C2C2C2;
         justify-content: space-between;
+        &__Block{
+            max-width: 90%;
+            width: auto;
+        }
                 &:hover{
                     .Menu__Vignette__ValidatorEtPrix__Validator{
                         width: 3em;
+                        flex:2
                     }
 
                 }
@@ -151,6 +156,12 @@ body{
             margin-left: 1.2em;
             margin-right: 1em;
             margin-top: 0em;
+            white-space: nowrap;
+            p{
+                width: 100%;
+                overflow: hidden;
+            text-overflow:ellipsis;
+            }
             
         }
        
@@ -175,6 +186,7 @@ body{
             height: 100%;
             width:0em;
             background-color: lawngreen;
+            flex: 0;
         }
         
        

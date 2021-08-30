@@ -147,8 +147,16 @@ body {
           justify-content: space-between;
 }
 
+.Menu__Vignette__Block {
+  max-width: 90%;
+  width: auto;
+}
+
 .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
   width: 3em;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .Menu__Vignette__titre {
@@ -170,6 +178,13 @@ body {
   margin-left: 1.2em;
   margin-right: 1em;
   margin-top: 0em;
+  white-space: nowrap;
+}
+
+.Menu__Vignette__Description p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Menu__Vignette__ValidatorEtPrix {
@@ -194,6 +209,9 @@ body {
   height: 100%;
   width: 0em;
   background-color: lawngreen;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
 }
 
 .Bouton {
