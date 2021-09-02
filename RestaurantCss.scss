@@ -113,6 +113,8 @@ body{
         
 
     }
+
+
     &__Vignette{
         display: flex;
         width: 90%;
@@ -124,41 +126,53 @@ body{
         overflow: hidden;
         box-shadow: 0px 8px 20px #C2C2C2;
         justify-content: space-between;
-        &__Block{
-            max-width: 90%;
-            width: auto;
-        }
-                &:hover{
-                    .Menu__Vignette__ValidatorEtPrix__Validator{
-                        width: 3em;
-                        flex:2
-                    }
+
+
+        &:hover{
+            .Menu__Vignette__Block{
+                width: 70%;
+                height: 100%;
+                transition:  500ms;
+            }
+
+           .Menu__Vignette__ValidatorEtPrix__Validator{
+            width: 10em;
+}
+            .Menu__Vignette__ValidatorEtPrix__Validator__Icon{
+                i{
+                    transform: rotateZ(360deg);
+                }
+            }
+                    
 
                 }
         
         
 
         &__titre{
-            font-size: 3em;
+            font-size: 2.5em;
             font-family: $Police1__Bold;
             margin-left: 1em;
             
+            
             p{
                 margin-bottom: 0em;
+                white-space: nowrap;
+                text-overflow:ellipsis;
+                overflow: hidden;
+
 
             }
 
         }
         &__Description{
-            font-size: 2.5em;
+            font-size: 2em;
             font-family: $Police1;
             display: flex;
             margin-left: 1.2em;
-            margin-right: 1em;
             margin-top: 0em;
             white-space: nowrap;
             p{
-                width: 100%;
                 overflow: hidden;
             text-overflow:ellipsis;
             }
@@ -170,6 +184,7 @@ body{
         display: flex;
         margin-bottom: 0em;
         align-items: flex-end;
+        
 
         &__Prix{
             p{
@@ -185,8 +200,22 @@ body{
         &__Validator{
             height: 100%;
             width:0em;
-            background-color: lawngreen;
-            flex: 0;
+            background-color: #99E2D0;
+            transition: width 300ms 100ms;
+            &__Icon{
+                height: 100%;
+                display: flex;
+                padding-left: 23%;
+                align-items: center;
+
+                i{
+                   
+                    font-size: 5em;
+                    color: white;
+                    transition: transform 500ms;
+                }
+                
+            }
         }
         
        

@@ -147,42 +147,47 @@ body {
           justify-content: space-between;
 }
 
-.Menu__Vignette__Block {
-  max-width: 90%;
-  width: auto;
+.Menu__Vignette:hover .Menu__Vignette__Block {
+  width: 70%;
+  height: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
-  width: 3em;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  width: 10em;
+}
+
+.Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 
 .Menu__Vignette__titre {
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: "RobotoBold";
   margin-left: 1em;
 }
 
 .Menu__Vignette__titre p {
   margin-bottom: 0em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .Menu__Vignette__Description {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: "Roboto";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 1.2em;
-  margin-right: 1em;
   margin-top: 0em;
   white-space: nowrap;
 }
 
 .Menu__Vignette__Description p {
-  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -208,10 +213,29 @@ body {
 .Menu__Vignette__ValidatorEtPrix__Validator {
   height: 100%;
   width: 0em;
-  background-color: lawngreen;
-  -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
+  background-color: #99E2D0;
+  -webkit-transition: width 300ms 100ms;
+  transition: width 300ms 100ms;
+}
+
+.Menu__Vignette__ValidatorEtPrix__Validator__Icon {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 23%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
+  font-size: 5em;
+  color: white;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 .Bouton {
