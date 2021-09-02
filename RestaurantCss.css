@@ -108,6 +108,44 @@ body {
   font-family: 'Shrikland';
 }
 
+.Menu__NomEtCoeur__logo {
+  color: black;
+  position: relative;
+  font-size: 1em;
+  font-weight: 2em;
+}
+
+.Menu__NomEtCoeur__logo i {
+  position: absolute;
+  right: 0em;
+  bottom: -0.5em;
+}
+
+.Menu__NomEtCoeur__logo .fas {
+  z-index: 1;
+  color: #FF79DA;
+}
+
+.Menu__NomEtCoeur__logo .far {
+  z-index: 3;
+}
+
+.Menu__NomEtCoeur__logo__ecran {
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+  width: 1.8em;
+  height: 2.1em;
+  right: 0.2em;
+  bottom: -1em;
+  -webkit-transition: bottom 400ms;
+  transition: bottom 400ms;
+}
+
+.Menu__NomEtCoeur__logo:hover .Menu__NomEtCoeur__logo__ecran {
+  bottom: -2.9em;
+}
+
 .Menu__NomEtCoeur i {
   font-size: 2em;
 }

@@ -87,6 +87,44 @@ body{
         font-size: 2.4em;
         align-items: center;
         font-family: 'Shrikland';
+        &__logo{
+            color: black;
+            position: relative;
+
+            font-size: 1em;
+            font-weight:2em ;
+
+            i{
+                position: absolute;
+                right: 0em;
+                bottom: -0.5em;
+                
+            }
+            .fas{
+                z-index: 1;
+                color: #FF79DA;
+            }
+            .far{
+                z-index: 3;
+            }
+            &__ecran{
+                z-index: 2;
+                position: absolute;
+                background-color: white;
+                width: 1.8em;
+                height: 2.1em;
+                right: 0.2em;
+                bottom: -1em;
+                transition: bottom 400ms;
+
+            }
+            &:hover{
+                .Menu__NomEtCoeur__logo__ecran {
+                    bottom: -2.9em;
+                }
+            }
+
+        }
         i{
             font-size: 2em;
         }

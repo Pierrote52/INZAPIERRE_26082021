@@ -335,9 +335,41 @@ header .LogoCentral .LogoCentral__image {
 
 .Restaurants__vignette__description__logo {
   color: black;
+  position: relative;
   font-size: 6em;
   font-weight: 2em;
   margin-right: 5%;
+}
+
+.Restaurants__vignette__description__logo i {
+  position: absolute;
+  right: 0em;
+  bottom: -0.5em;
+}
+
+.Restaurants__vignette__description__logo .fas {
+  z-index: 1;
+  color: #FF79DA;
+}
+
+.Restaurants__vignette__description__logo .far {
+  z-index: 3;
+}
+
+.Restaurants__vignette__description__logo__ecran {
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+  width: 1em;
+  height: 0.75em;
+  right: 0em;
+  bottom: -0.34em;
+  -webkit-transition: bottom 400ms;
+  transition: bottom 400ms;
+}
+
+.Restaurants__vignette__description__logo:hover .Restaurants__vignette__description__logo__ecran {
+  bottom: 0.5em;
 }
 
 footer {

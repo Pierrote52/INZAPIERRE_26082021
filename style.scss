@@ -232,9 +232,41 @@ header{
             }
             &__logo{
                 color: black;
+                position: relative;
+
                 font-size: 6em;
                 font-weight:2em ;
                 margin-right: 5%;
+
+                i{
+                    position: absolute;
+                    right: 0em;
+                    bottom: -0.5em;
+                    
+                }
+                .fas{
+                    z-index: 1;
+                    color: #FF79DA;
+                }
+                .far{
+                    z-index: 3;
+                }
+                &__ecran{
+                    z-index: 2;
+                    position: absolute;
+                    background-color: white;
+                    width: 1em;
+                    height: 0.75em;
+                    right: 0em;
+                    bottom: -0.34em;
+                    transition: bottom 400ms;
+
+                }
+                &:hover{
+                    .Restaurants__vignette__description__logo__ecran {
+                        bottom: 0.5em;
+                    }
+                }
 
             }
         }
