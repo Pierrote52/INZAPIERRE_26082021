@@ -61,8 +61,10 @@ header .LogoCentral .LogoCentral__image {
 }
 
 .localisation__textLocalisation {
-  margin-left: 2em;
-  font-size: 2.9em;
+  margin-left: 1.5em;
+  font-size: 2.6em;
+  white-space: nowrap;
+  padding-right: 13%;
 }
 
 .AnnonceSlogan {
@@ -71,13 +73,13 @@ header .LogoCentral .LogoCentral__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .AnnonceSlogan__Slogan {
@@ -92,8 +94,8 @@ header .LogoCentral .LogoCentral__image {
 
 .AnnonceSlogan__sousTitre {
   font-family: "RobotoLight";
-  font-size: 3em;
-  margin-left: 10%;
+  font-size: 1.3em;
+  text-align: center;
 }
 
 .AnnonceSlogan__btnExplorerNosRestaurants {
@@ -261,7 +263,7 @@ header .LogoCentral .LogoCentral__image {
   font-family: "RobotoBold";
   font-size: 5em;
   margin-left: 10%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .Restaurants a {
@@ -304,7 +306,7 @@ header .LogoCentral .LogoCentral__image {
 }
 
 .Restaurants__vignette__image__Nouveau p {
-  color: 1;
+  opacity: 0.5;
   margin: 0.5em;
 }
 
@@ -318,7 +320,7 @@ header .LogoCentral .LogoCentral__image {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 
 .Restaurants__vignette__description__text__Nom {
@@ -337,7 +339,6 @@ header .LogoCentral .LogoCentral__image {
   color: black;
   position: relative;
   font-size: 6em;
-  font-weight: 2em;
   margin-right: 5%;
 }
 
@@ -377,6 +378,7 @@ footer {
   padding-top: 1em;
   margin-top: 2em;
   width: 100%;
+  padding-bottom: 10%;
 }
 
 footer .ImageFooter {
@@ -390,12 +392,12 @@ footer .ImageFooter img {
   height: 100%;
 }
 
-footer .Proposer {
+footer .Proposer, footer .Partenaire, footer .Mention, footer .Contact {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 3.2em;
+  font-size: 2.3em;
   font-family: "Roboto";
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -403,58 +405,11 @@ footer .Proposer {
   margin-left: 5%;
 }
 
-footer .Proposer i {
+footer .Proposer i, footer .Partenaire i, footer .Mention i, footer .Contact i {
   margin-right: 5%;
 }
 
-footer .Partenaire {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.2em;
-  font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5%;
-}
-
-footer .Partenaire i {
-  margin-right: 5%;
-}
-
-footer .Mention {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.2em;
-  font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5%;
-}
-
-footer .Mention i {
-  margin-right: 5%;
-}
-
-footer .Contact {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.2em;
-  font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5%;
-}
-
-footer .Contact i {
-  margin-right: 5%;
+footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
+  margin-bottom: 0em;
 }
 /*# sourceMappingURL=style.css.map */

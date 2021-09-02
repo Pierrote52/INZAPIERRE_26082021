@@ -185,22 +185,6 @@ body {
           justify-content: space-between;
 }
 
-.Menu__Vignette:hover .Menu__Vignette__Block {
-  width: 70%;
-  height: 100%;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
-  width: 10em;
-}
-
-.Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-}
-
 .Menu__Vignette__titre {
   font-size: 2.5em;
   font-family: "RobotoBold";
@@ -276,6 +260,23 @@ body {
   transition: transform 500ms, -webkit-transform 500ms;
 }
 
+.Menu__Vignette:hover .Menu__Vignette__Block {
+  max-width: 70%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+.Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
+  width: 10em;
+}
+
+.Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
 .Bouton {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -299,6 +300,7 @@ footer {
   padding-top: 1em;
   margin-top: 2em;
   width: 100%;
+  padding-bottom: 10%;
 }
 
 footer .ImageFooter {
@@ -312,12 +314,12 @@ footer .ImageFooter img {
   height: 100%;
 }
 
-footer .Proposer {
+footer .Proposer, footer .Partenaire, footer .Mention, footer .Contact {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 3.2em;
+  font-size: 2.3em;
   font-family: "Roboto";
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -325,58 +327,11 @@ footer .Proposer {
   margin-left: 5%;
 }
 
-footer .Proposer i {
+footer .Proposer i, footer .Partenaire i, footer .Mention i, footer .Contact i {
   margin-right: 5%;
 }
 
-footer .Partenaire {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.2em;
-  font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5%;
-}
-
-footer .Partenaire i {
-  margin-right: 5%;
-}
-
-footer .Mention {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.2em;
-  font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5%;
-}
-
-footer .Mention i {
-  margin-right: 5%;
-}
-
-footer .Contact {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 3.2em;
-  font-family: "Roboto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 5%;
-}
-
-footer .Contact i {
-  margin-right: 5%;
+footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
+  margin-bottom: 0em;
 }
 /*# sourceMappingURL=RestaurantCss.css.map */

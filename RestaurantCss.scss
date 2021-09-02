@@ -11,17 +11,41 @@
 }
 
 
-@mixin dispoTextFooter{
-    color: white;
+@mixin footerDisplay{
+    background-color: rgb(53,53,53);
+    padding-top: 1em;
+    margin-top: 2em;
+    width: 100%;
+    padding-bottom: 10%;
+    .ImageFooter{
+        margin-top: 2em;
+
+        margin-left: 5%;
+        height: 4em;
+        img{
+            color: white;
+            height: 100%;
+        }
+    }
+    .Proposer ,.Partenaire,.Mention,.Contact{
+        color: white;
         display: flex;
-        font-size: 3.2em;
+        font-size: 2.3em;
         font-family: $Police1;
         align-items: center;
         margin-left: 5%;
         i{
-            
             margin-right: 5%;
         }
+        p{
+            margin-bottom: 0em;
+        }
+        
+
+    }
+    
+    
+    
 }
 
 header{
@@ -164,58 +188,40 @@ body{
         overflow: hidden;
         box-shadow: 0px 8px 20px #C2C2C2;
         justify-content: space-between;
-
-
-        &:hover{
-            .Menu__Vignette__Block{
-                width: 70%;
-                height: 100%;
-                transition:  500ms;
-            }
-
-           .Menu__Vignette__ValidatorEtPrix__Validator{
-            width: 10em;
-}
-            .Menu__Vignette__ValidatorEtPrix__Validator__Icon{
-                i{
-                    transform: rotateZ(360deg);
-                }
-            }
-                    
-
-                }
         
         
-
-        &__titre{
-            font-size: 2.5em;
-            font-family: $Police1__Bold;
-            margin-left: 1em;
-            
-            
-            p{
-                margin-bottom: 0em;
+            &__titre{
+                font-size: 2.5em;
+                font-family: $Police1__Bold;
+                margin-left: 1em;
+                
+                
+                p{
+                    margin-bottom: 0em;
+                    white-space: nowrap;
+                    text-overflow:ellipsis;
+                    overflow: hidden;
+    
+    
+                }
+    
+            }
+            &__Description{
+                
+                font-size: 2em;
+                font-family: $Police1;
+                display: flex;
+                margin-left: 1.2em;
+                margin-top: 0em;
                 white-space: nowrap;
+                p{
+                    overflow: hidden;
                 text-overflow:ellipsis;
-                overflow: hidden;
-
-
+                }
+                
             }
-
-        }
-        &__Description{
-            font-size: 2em;
-            font-family: $Police1;
-            display: flex;
-            margin-left: 1.2em;
-            margin-top: 0em;
-            white-space: nowrap;
-            p{
-                overflow: hidden;
-            text-overflow:ellipsis;
-            }
-            
-        }
+        
+        
        
     &__ValidatorEtPrix{
         
@@ -258,7 +264,25 @@ body{
         
        
     } 
+    &:hover{
+        .Menu__Vignette__Block{
+            max-width: 70%;
+            height: 100%;
+            overflow: hidden;
+            transition: width 500ms;
+        }
 
+       .Menu__Vignette__ValidatorEtPrix__Validator{
+        width: 10em;
+}
+        .Menu__Vignette__ValidatorEtPrix__Validator__Icon{
+            i{
+                transform: rotateZ(360deg);
+            }
+        }
+                
+
+            }
     }
 }
 .Bouton{
@@ -278,36 +302,5 @@ body{
 
 }
 footer{
-        background-color: rgb(53,53,53);
-        padding-top: 1em;
-        margin-top: 2em;
-        width: 100%;
-        .ImageFooter{
-            margin-top: 2em;
-    
-            margin-left: 5%;
-            height: 4em;
-            img{
-                color: white;
-                height: 100%;
-            }
-        }
-        .Proposer{
-            @include dispoTextFooter;
-            
-    
-        }
-        .Partenaire{
-            @include dispoTextFooter;
-    
-        }
-        
-        .Mention{
-            @include dispoTextFooter();
-            
-        }
-        .Contact{
-            @include dispoTextFooter;
-        }
-          
+    @include footerDisplay();
     }
