@@ -47,7 +47,17 @@
     
     
 }
+@keyframes animVignette{
+    0%{
+        transform: translateY(2em);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
 
+    }
+}
 header{
     width: 100%;
     margin-top: 5%;
@@ -188,6 +198,7 @@ body{
         overflow: hidden;
         box-shadow: 0px 8px 20px #C2C2C2;
         justify-content: space-between;
+        animation:animVignette 1s 300ms both ease-out ;
         
         
             &__titre{

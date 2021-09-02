@@ -23,6 +23,32 @@
   src: url("Shrikland/Shrikhand-Regular.ttf");
 }
 
+@-webkit-keyframes animVignette {
+  0% {
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animVignette {
+  0% {
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 header {
   width: 100%;
   margin-top: 5%;
@@ -183,6 +209,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation: animVignette 1s 300ms both ease-out;
+          animation: animVignette 1s 300ms both ease-out;
 }
 
 .Menu__Vignette__titre {
