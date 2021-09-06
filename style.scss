@@ -1,5 +1,8 @@
 @import "UI.scss";
 
+
+$OpacityAnim: 1;
+
 @mixin presentationVignette {
         display: flex;
         font-size: 1.4em;
@@ -123,14 +126,120 @@
     }
 }
 
+@keyframes AnimLoading{
+    0%{
+
+        }
+
+
+    
+    10%{
+
+        
+
+    }
+    99%{
+        opacity: 0.2;
+    }
+    100%{
+        
+        opacity: 1;
+    }
+}
+@keyframes animBoule{
+    0%{
+
+    }
+    50%{
+
+        background-color: white;
+        transform: translateY(-2em)
+    }
+    100%{
+        transform: translateY(0em)
+
+    }
+
+}
+@keyframes displayLoading{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
 /*
 Commencement de SCSS pour le style mobil.
 */
 
 body{
+    position: relative;
     margin: 0em;
     margin-right: 0em;
 }
+.AnimationLoadingPage{
+    position: absolute;
+    top:5%;
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity:0;
+    animation: displayLoading 3s 5ms;
+    
+    &__image{
+        overflow: hidden;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__boules{
+        display: flex;
+        margin-top: 2em;
+        &__boule1{
+            margin: 1em;
+            height: 3em;
+            width: 3em;
+            background-color: $primaryColor;
+            animation: animBoule 2s infinite;
+    
+        }
+        &__boule2{
+
+            margin: 1em;
+            height: 3em;
+            width: 3em;
+            background-color: $secondaryColor;
+
+            animation: animBoule 2s 300ms infinite;
+
+
+        }
+        &__boule3{
+
+            margin: 1em;
+            height: 3em;
+            width: 3em;
+            background-color: $terciaryColor;
+            animation: animBoule 2s 600ms infinite;
+        }
+
+    }
+    
+}
+.Corps{
+    opacity: 0.2;
+    animation:AnimLoading 3s both ease-out;
+}
+
 header{
     
     position: relative;
@@ -158,7 +267,6 @@ header{
     align-items: center;
     justify-content: center;
     background-color: $backgroundGreyDarker;
-    margin-bottom: 2em;
 
         &__iconLocalisation{
             font-size: 2em;
@@ -251,6 +359,7 @@ header{
         font-size: 2em;
         margin-left: 5%;
         margin-bottom: 0em;
+        background-color: $backgroundGreyLighter;
 
     }
     a{
@@ -350,7 +459,7 @@ header{
 footer{
    @include footerDisplay();  
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     .localisation{
         margin-left: auto;
         margin-right: auto;
