@@ -525,10 +525,9 @@ header .LogoCentral .LogoCentral__image {
 
 footer {
   background-color: #353535;
-  padding-top: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
   width: 100%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   overflow: hidden;
 }
 
@@ -539,7 +538,7 @@ footer .ImageFooter {
 
 footer .ImageFooter img {
   color: white;
-  width: 90%;
+  width: 40%;
 }
 
 footer .Proposer, footer .Partenaire, footer .Mention, footer .Contact {
@@ -564,19 +563,28 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
 }
 
 @media screen and (min-width: 800px) {
+  header .LogoCentral {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .AnimationLoadingPage__image {
+    width: 20%;
+  }
   .localisation {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
     border-radius: 34px;
     margin-top: 2em;
+    margin-bottom: 2em;
   }
   .localisation__iconLocalisation {
     font-size: 2em;
   }
   .localisation__textLocalisation {
     margin-left: 1.5em;
-    font-size: 2em;
+    font-size: 1.5em;
     white-space: nowrap;
     padding-right: 13%;
   }
@@ -590,36 +598,46 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: auto;
+    margin-bottom: 2em;
   }
   .AnnonceSlogan__Slogan {
     margin-top: 0em;
     margin-top: 2em;
-    font-size: 2em;
+    font-size: 1em;
     margin-left: 5%;
     margin-right: 5%;
     text-align: right;
+    white-space: nowrap;
   }
   .AnnonceSlogan__sousTitre {
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: left;
     margin-right: 1em;
   }
   .AnnonceSlogan__btnExplorerNosRestaurants {
+    width: 24%;
     border-radius: 1em;
     margin-right: 1em;
+    white-space: nowrap;
   }
   .AnnonceSlogan__btnExplorerNosRestaurants p {
-    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
     text-align: center;
   }
   .TitreFonctionnement {
-    font-size: 3em;
+    margin-top: 0em;
+    font-size: 2em;
     text-align: center;
   }
   .vignettesFonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .vignettesFonctionnement__ChoixRestaurant {
     display: -webkit-box;
@@ -629,7 +647,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 2.3em;
+    font-size: 1.0em;
     font-family: "RobotoBold";
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -640,7 +658,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     position: relative;
     margin-right: 5%;
     margin-left: 1em;
-    border-radius: 60px;
+    border-radius: 15px;
     padding-top: 2%;
     padding-bottom: 2%;
     -webkit-box-shadow: 0px 2px 20px #c2c2c2;
@@ -652,7 +670,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   }
   .vignettesFonctionnement__ChoixRestaurant__pastille {
     position: absolute;
-    left: 40%;
+    left: 47%;
     bottom: -10%;
     background-color: #9356dc;
     border-radius: 100px;
@@ -676,7 +694,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 2.3em;
+    font-size: 1.0em;
     font-family: "RobotoBold";
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -687,7 +705,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     position: relative;
     margin-right: 5%;
     margin-left: 1em;
-    border-radius: 60px;
+    border-radius: 15px;
     padding-top: 2%;
     padding-bottom: 2%;
     -webkit-box-shadow: 0px 2px 20px #c2c2c2;
@@ -699,7 +717,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   }
   .vignettesFonctionnement__CompositionMenu__pastille {
     position: absolute;
-    left: 40%;
+    left: 47%;
     bottom: -10%;
     background-color: #9356dc;
     border-radius: 100px;
@@ -723,7 +741,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 2.3em;
+    font-size: 1.0em;
     font-family: "RobotoBold";
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -734,7 +752,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     position: relative;
     margin-right: 5%;
     margin-left: 1em;
-    border-radius: 60px;
+    border-radius: 15px;
     padding-top: 2%;
     padding-bottom: 2%;
     -webkit-box-shadow: 0px 2px 20px #c2c2c2;
@@ -747,7 +765,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   }
   .vignettesFonctionnement__Degustez__pastille {
     position: absolute;
-    left: 40%;
+    left: 47%;
     bottom: -10%;
     background-color: #9356dc;
     border-radius: 100px;
@@ -770,7 +788,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     display: flex;
   }
   .Restaurants__titre {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
   }
   .Restaurants a {
@@ -786,27 +804,25 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     background-color: white;
     -webkit-box-shadow: 0px 5px 10px #C2C2C2;
             box-shadow: 0px 5px 10px #C2C2C2;
-    height: 100em;
+    height: 20em;
   }
   .Restaurants__vignette__image {
     overflow: hidden;
-    height: 70%;
+    height: 50%;
     position: relative;
   }
   .Restaurants__vignette__image img {
     position: absolute;
-    left: -90%;
-    height: 100%;
-    width: auto;
+    width: 100%;
   }
   .Restaurants__vignette__image__Nouveau {
     z-index: 3;
     position: absolute;
-    right: 20%;
+    right: 2%;
     top: 2%;
     background-color: #9ee3d0;
     font-family: "Roboto";
-    font-size: 2.4em;
+    font-size: 1.4em;
     border-radius: 14px;
   }
   .Restaurants__vignette__image__Nouveau p {
@@ -830,24 +846,23 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     margin-left: 4%;
   }
   .Restaurants__vignette__description__text__Nom {
-    font-size: 3em;
+    font-size: 1em;
     font-family: "RobotoBold";
-    margin-bottom: 0em;
     text-align: center;
     height: 3em;
   }
   .Restaurants__vignette__description__text__Adresse {
     font-family: "RobotoLight";
-    font-size: 2.3em;
+    font-size: 0.8em;
     margin-top: 0em;
     text-align: center;
   }
   .Restaurants__vignette__description__logo {
-    margin-left: 30%;
-    margin-top: 30%;
+    margin-left: 20%;
+    margin-top: 10%;
     color: black;
     position: relative;
-    font-size: 4em;
+    font-size: 2em;
   }
   .Restaurants__vignette__description__logo i {
     position: absolute;
