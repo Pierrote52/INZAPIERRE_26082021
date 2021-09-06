@@ -18,13 +18,14 @@
     width: 100%;
     padding-bottom: 10%;
     .ImageFooter{
+        overflow: hidden;
         margin-top: 2em;
 
         margin-left: 5%;
-        height: 4em;
+        width: 90%;
         img{
             color: white;
-            height: 100%;
+            width: 100%;
         }
     }
     .Proposer ,.Partenaire,.Mention,.Contact{
@@ -47,6 +48,47 @@
     
     
 }
+@mixin footerDisplayMobil {
+    display: flex;
+   
+        background-color: rgb(53,53,53);
+        padding-top: 1em;
+        margin-top: 2em;
+        padding-bottom: 5%;
+        margin-right: 5%;
+        .ImageFooter{
+            overflow: hidden;
+            margin-top: 2em;
+    
+            margin-left: 5%;
+            width: 20%;
+            img{
+                color: white;
+                width: 100%;
+            }
+        }
+        .Proposer ,.Partenaire,.Mention,.Contact{
+            color: white;
+            display: flex;
+            font-size: 1.3em;
+            font-family: $Police1;
+            align-items: center;
+            margin-left: 5%;
+            i{
+                margin-right: 5%;
+            }
+            p{
+                margin-bottom: 0em;
+            }
+            
+    
+        
+        
+        
+        
+    }
+    
+}
 @keyframes animVignette{
     0%{
         transform: translateY(2em);
@@ -66,7 +108,7 @@ header{
     margin-bottom: 5%;
     
         .LogoBackSparow{
-            font-size: 4em;
+            font-size: 2em;
             margin-right: 20%;
             margin-left: 5%;
             color: black;
@@ -81,7 +123,7 @@ header{
     
     .LogoCentral{
         img{
-            height: 5em;
+            width: 90%;
         }
     }
     
@@ -95,13 +137,14 @@ body{
 }
 .PhotoRestaurant{
     width: 100%;
-    height: 50em;
+    height: 20em;
     background-color: blue;
     position: relative;
     overflow: hidden;
     img{
         position: absolute;
-        height: 100%;
+        left: -10%;
+        width: 130%;
     }
 }
 .Menu{
@@ -116,9 +159,10 @@ body{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     &__NomEtCoeur{
+        margin-top: 1em;
         display: flex;
         justify-content: space-around;
-        font-size: 2.4em;
+        font-size: 0.8em;
         align-items: center;
         font-family: 'Shrikland';
         &__logo{
@@ -144,7 +188,7 @@ body{
             &__ecran{
                 z-index: 2;
                 position: absolute;
-                background-color: white;
+                background-color: rgb(246,246,246);
                 width: 1.8em;
                 height: 2.1em;
                 right: 0.2em;
@@ -172,13 +216,13 @@ body{
         &__text{
 
         font-family: $Police1__Light;
-        font-size: 3.5em;
+        font-size: 1.2em;
         margin-bottom: 0em;
 
         }
         &__soulignement{
             margin-top: 0em;
-            height: 10px;
+            height: 3px;
             width: 15%;
             background-color: $terciaryColor;
         }
@@ -193,18 +237,21 @@ body{
         margin-top: 2em;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 40px;
+        border-radius: 20px;
         background-color: white;
         overflow: hidden;
         box-shadow: 0px 8px 20px #C2C2C2;
         justify-content: space-between;
         animation:animVignette 1s 300ms both ease-out ;
+        &__Block{
+            width: 80%;
+        }
         
         
             &__titre{
-                font-size: 2.5em;
+                font-size: 1em;
                 font-family: $Police1__Bold;
-                margin-left: 1em;
+                margin-left: 5%;
                 
                 
                 p{
@@ -219,10 +266,10 @@ body{
             }
             &__Description{
                 
-                font-size: 2em;
+                font-size: 0.8em;
                 font-family: $Police1;
                 display: flex;
-                margin-left: 1.2em;
+                margin-left: 1em;
                 margin-top: 0em;
                 white-space: nowrap;
                 p{
@@ -245,7 +292,7 @@ body{
             p{
                 font-family: $Police1__Light;
                 font-weight: 700;
-                font-size: 3em;
+                font-size: 1em;
                 margin-right: 0.5em;
                 margin-bottom: 20%;}
             
@@ -265,7 +312,7 @@ body{
 
                 i{
                    
-                    font-size: 5em;
+                    font-size: 2em;
                     color: white;
                     transition: transform 500ms;
                 }
@@ -284,7 +331,7 @@ body{
         }
 
        .Menu__Vignette__ValidatorEtPrix__Validator{
-        width: 10em;
+        width: 5em;
 }
         .Menu__Vignette__ValidatorEtPrix__Validator__Icon{
             i{
@@ -302,10 +349,9 @@ body{
         margin-left: auto;
         margin-right: auto;
         border-radius: 90px;
-        margin-top: 3em;
-        margin-bottom: 5em;
+        margin-top: 2em;
         p{
-            font-size: 3em;
+            font-size: 1em;
             text-align: center;
             color: white;
             font-family: $Police1;
@@ -315,3 +361,230 @@ body{
 footer{
     @include footerDisplay();
     }
+
+    @media screen and (min-width: 900px){
+        header{
+            width: 100%;
+            margin-top: 5%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5%;
+            
+                .LogoBackSparow{
+                    font-size: 500%;
+                    margin-left: 5%;
+                    color: black;
+                    a{
+                        color: black;
+                    text-decoration: none;
+        
+                    }
+                }
+                
+        
+            
+            .LogoCentral{
+                flex: 2;
+                margin-right: none;
+                img{
+                    width: 80%;
+                }
+            }
+            
+        }
+    
+        .PhotoRestaurant{
+            width: 100%;
+            height: 50em;
+            img{
+        left: -10%;
+        width: 120%;
+        min-height: 30em;
+        
+            }
+        }
+        .Menu{
+            &__NomEtCoeur{
+                font-size: 2em;
+                &__logo{
+                    color: black;
+                    position: relative;
+        
+                    font-size: 1em;
+                    font-weight:2em ;
+         
+                    &__ecran{
+                        z-index: 2;
+                        position: absolute;
+                        width: 2.8em;
+                        height: 2.5em;
+                        right: 0.2em;
+                        bottom: -1em;
+                        transition: bottom 400ms;
+        
+                    }
+                    &:hover{
+                        .Menu__NomEtCoeur__logo__ecran {
+                            bottom: -3.9em;
+                        }
+                    }
+        
+                }
+                i{
+                    font-size: 3em;
+                }
+                
+        
+            }
+            &__Cath{
+        
+        
+                margin-left: 5%;
+                &__text{
+                font-size: 3.2em;
+        
+                }
+                &__soulignement{
+                    width: 10%;
+                }
+                
+        
+            }
+        
+        
+            &__Vignette{
+                display: flex;
+                width: 90%;
+                margin-top: 2em;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+                background-color: white;
+                overflow: hidden;
+                box-shadow: 0px 8px 20px #C2C2C2;
+                justify-content: space-between;
+                animation:animVignette 1s 300ms both ease-out ;
+                &__Block{
+                    width: 100%;
+                }
+                
+                
+                    &__titre{
+                        font-size: 1.6em;
+                        font-family: $Police1__Bold;
+                        margin-left: 5%;
+                        
+                        
+                        p{
+                            margin-bottom: 0em;
+                            white-space: nowrap;
+                            text-overflow:ellipsis;
+                            overflow: hidden;
+            
+            
+                        }
+            
+                    }
+                    &__Description{
+                        
+                        font-size: 1.3em;
+                        font-family: $Police1;
+                        display: flex;
+                        margin-left: 5%;
+                        margin-top: 0em;
+                        white-space: nowrap;
+                        p{
+                            overflow: hidden;
+                        text-overflow:ellipsis;
+                        }
+                        
+                    }
+                
+                
+               
+            &__ValidatorEtPrix{
+                
+                display: flex;
+                margin-bottom: 0em;
+                align-items: flex-end;
+                
+        
+                &__Prix{
+                    p{
+                        font-family: $Police1__Light;
+                        font-weight: 700;
+                        font-size: 2em;
+                        margin-right: 0.5em;
+                        margin-bottom: 20%;}
+                    
+        
+                }
+        
+                &__Validator{
+                    height: 100%;
+                    width:0em;
+                    background-color: #99E2D0;
+                    transition: width 300ms 100ms;
+                    &__Icon{
+                        height: 100%;
+                        display: flex;
+                        padding-left: 23%;
+                        align-items: center;
+        
+                        i{
+                           
+                            font-size: 6em;
+                            color: white;
+                            transition: transform 500ms;
+                        }
+                        
+                    }
+                }
+                
+               
+            } 
+            &:hover{
+                .Menu__Vignette__Block{
+                    max-width: none;
+                    height: 100%;
+                    overflow: hidden;
+                    transition: width 500ms;
+                }
+        
+               .Menu__Vignette__ValidatorEtPrix__Validator{
+                width: 10em;
+        }
+                .Menu__Vignette__ValidatorEtPrix__Validator__Icon{
+                    i{
+                        transform: rotateZ(360deg);
+                    }
+                }
+                        
+        
+                    }
+            }
+        }
+        .Bouton{
+            background: linear-gradient(#FF79DA,#9356DC);
+                width: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 90px;
+                margin-top: 2em;
+                p{
+                    font-size: 2em;
+                    text-align: center;
+                    color: white;
+                    font-family: $Police1;
+                }
+
+
+
+    }
+    footer{
+        @include footerDisplayMobil();
+        
+    }
+
+
+}

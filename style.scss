@@ -2,7 +2,7 @@
 
 @mixin presentationVignette {
         display: flex;
-        font-size: 3.3em;
+        font-size: 1.4em;
         font-family: $Police1__Bold;
         justify-content: space-around;
         align-items: center;
@@ -42,26 +42,27 @@
 
 
 
+
 @mixin footerDisplay{
     background-color: rgb(53,53,53);
     padding-top: 1em;
     margin-top: 2em;
     width: 100%;
     padding-bottom: 10%;
+    overflow: hidden;
     .ImageFooter{
         margin-top: 2em;
 
         margin-left: 5%;
-        height: 4em;
         img{
             color: white;
-            height: 100%;
+            width: 90%;
         }
     }
     .Proposer ,.Partenaire,.Mention,.Contact{
         color: white;
         display: flex;
-        font-size: 2.3em;
+        font-size: 1.2em;
         font-family: $Police1;
         align-items: center;
         margin-left: 5%;
@@ -78,9 +79,53 @@
     
     
 }
+@mixin presentationVignetteDesktop {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.3em;
+    font-family: $Police1__Bold;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $backgroundGreyLighter;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 1em;
+    border-radius: 60px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0px 2px 20px #c2c2c2;
+    margin-bottom: 2em;
+    p{
+        text-align: center;
+    }
+    &__pastille{
+        position:absolute;
+        left: 40%;
+        bottom: -10%;
+        background-color: $primaryColor;
+        border-radius: 100px;
+        p{
+            color: white;
+            margin: 0.2em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
 
 
+        }
+        
 
+
+    }
+    &__logo{
+        margin-left: 5%;
+        font-size: 2.3em;
+        color: gray;
+    }
+}
+
+/*
+Commencement de SCSS pour le style mobil.
+*/
 
 body{
     margin: 0em;
@@ -94,14 +139,13 @@ header{
     overflow-y: hidden;
 
     .LogoCentral {
-        margin-top: 4em;
-        margin-bottom: 2em;
+        margin-top: 1em;
         display: flex;
         width: 100%;
         justify-content: center;
     }
     .LogoCentral .LogoCentral__image{
-        width: 50%;
+        width: 70%;
     
         
     }
@@ -114,17 +158,18 @@ header{
     align-items: center;
     justify-content: center;
     background-color: $backgroundGreyDarker;
+    margin-bottom: 2em;
+
         &__iconLocalisation{
-            font-size: 3em;
+            font-size: 2em;
             
             
 
         }
         &__textLocalisation{
             margin-left: 1.5em;
-            font-size: 2.6em;
+            font-size: 1.7em;
             white-space: nowrap;
-            padding-right: 13%;
         }
 
 }
@@ -138,7 +183,7 @@ header{
         margin-top: 0em;
         font-family: $Police1__Bold;
         margin-top: 2em;
-        font-size: 4em;
+        font-size: 2em;
         margin-left: 10%;
         margin-right: 10%;
         text-align: center;
@@ -152,10 +197,10 @@ header{
         background: linear-gradient(#FF79DA,#9356DC);
         width: 70%;
         border-radius: 90px;
-        margin-top: 3em;
-        margin-bottom: 5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
         p{
-            font-size: 3em;
+            font-size: 1.4em;
             text-align: center;
             color: white;
             font-family: $Police1;
@@ -164,9 +209,10 @@ header{
     }
 }
 .TitreFonctionnement{
-    font-size: 4em;
+    font-size: 2.2em;
     font-family: $Police1__Bold;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-top: 4em;
     margin-bottom: 2em
 }
 .vignettesFonctionnement{
@@ -195,17 +241,16 @@ header{
 
 }
 
-
 .Restaurants{
     background-color: $backgroundGreyLighter;
-    padding-top: 5em;
+    padding-top: 2em;
 
    
     &__titre{
         font-family: $Police1__Bold;
-        font-size: 5em;
-        margin-left: 10%;
-        margin-bottom: 1em;
+        font-size: 2em;
+        margin-left: 5%;
+        margin-bottom: 0em;
 
     }
     a{
@@ -221,10 +266,9 @@ header{
         width: 90%;
         background-color: white;
         box-shadow: 0px 5px 10px #C2C2C2;
-        height: 50em;
+        height: AUTO;
         &__image{
             overflow: hidden;
-            height: 70%;
             position: relative;
             img{
                 min-height:100% ;
@@ -236,8 +280,7 @@ header{
                 top: 5%;
                 background-color: rgb(158,227,208);
                 font-family: $Police1;
-                font-size: 2.4em;
-
+                font-size: 1.4em;
                 border-radius: 14px;
                 p{
                     opacity: 0.5;
@@ -252,13 +295,13 @@ header{
             margin-left: 4%;
             &__text{
                 &__Nom{
-                    font-size: 4em;
+                    font-size: 1.5em;
                     font-family: $Police1__Bold;
                     margin-bottom: 0em;
                 }
                 &__Adresse{
                     font-family: $Police1__Light;
-                    font-size: 3.3em;
+                    font-size: 1.3em;
                     margin-top: 0em;
                 }
             }
@@ -266,7 +309,7 @@ header{
                 color: black;
                 position: relative;
 
-                font-size: 6em;
+                font-size: 2.5em;
                 margin-right: 5%;
 
                 i{
@@ -307,3 +350,213 @@ header{
 footer{
    @include footerDisplay();  
 }
+@media screen and (min-width: 900px) {
+    .localisation{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 34px;
+        margin-top: 2em;
+        &__iconLocalisation{
+            font-size: 2em;
+            
+            
+
+        }
+        &__textLocalisation{
+            margin-left: 1.5em;
+            font-size: 2em;
+            white-space: nowrap;
+            padding-right: 13%;
+        }
+            
+    
+    }
+    .AnnonceSlogan{
+        background-color: $backgroundGreyLighter;
+        margin-top: 0em;
+        display: flex;
+        flex-direction: row;
+        &__Slogan{
+            margin-top: 0em;
+            margin-top: 2em;
+            font-size: 2em;
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align:right;
+        }
+        &__sousTitre{
+            font-size: 1.3em;
+            text-align: left;
+            margin-right: 1em;
+        }
+        &__btnExplorerNosRestaurants{
+            border-radius: 1em;
+            margin-right: 1em;
+            p{
+                font-size: 3em;
+                text-align: center;
+            }
+    
+        }
+    }
+    .TitreFonctionnement{
+        font-size: 3em;
+        text-align: center
+    }
+    .vignettesFonctionnement{
+        display: flex;
+
+
+        &__ChoixRestaurant{
+            @include presentationVignetteDesktop();
+    
+    
+    
+            
+    
+        }
+        &__CompositionMenu{
+            @include presentationVignetteDesktop();
+        }
+        &__Degustez{
+            @include presentationVignetteDesktop(
+            );
+            background-color: rgb(245, 236, 254);
+        }
+        
+    
+        
+    
+    
+    }
+    .Restaurants{
+        padding-top: 2em;
+        display: flex;
+    
+       
+        &__titre{
+            font-size: 3em;
+            text-align: center;
+    
+        }
+        a{
+        color: black;
+            text-decoration: none;
+        }
+        &__vignette{
+            margin-bottom: 3em;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            border-radius: 0px;
+            background-color: white;
+            box-shadow: 0px 5px 10px #C2C2C2;
+            height: 100em;
+            &__image{
+                overflow: hidden;
+                height: 70%;
+                position: relative;
+                img{
+                    position: absolute;
+                    left: -90%;
+                    height:100% ;
+                    width: auto;
+                }
+                &__Nouveau{
+                    z-index: 3;
+                    position: absolute;
+                    right: 20%;
+                    top: 2%;
+                    background-color: rgb(158,227,208);
+                    font-family: $Police1;
+                    font-size: 2.4em;
+    
+                    border-radius: 14px;
+                    p{
+                        opacity: 0.5;
+                        margin: 0.5em;
+                    }
+                }
+            }
+            &__description{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 4%;
+                &__text{
+                    &__Nom{
+                        font-size: 3em;
+                        font-family: $Police1__Bold;
+                        margin-bottom: 0em;
+                        text-align: center;
+                        height: 3em;
+                    }
+                    &__Adresse{
+                        font-family: $Police1__Light;
+                        font-size: 2.3em;
+                        margin-top: 0em;
+                        text-align: center;
+                    }
+                }
+                &__logo{
+                    margin-left: 30%;
+                    margin-top: 30%;
+                    color: black;
+                    position: relative;
+    
+                    font-size: 4em;
+    
+                    i{
+                        position: absolute;
+                        
+                    }
+                    .fas{
+                        z-index: 1;
+                        color: #FF79DA;
+                    }
+                    .far{
+                        z-index: 3;
+                    }
+                    &__ecran{
+                        z-index: 2;
+                        position: absolute;
+                        background-color: white;
+                        width: 1em;
+                        height: 0.75em;
+                        right: 0em;
+                        bottom: -0.34em;
+                        transition: bottom 400ms;
+    
+                    }
+                    &:hover{
+                        .Restaurants__vignette__description__logo__ecran {
+                            bottom: 0.5em;
+                        }
+                    }
+    
+                }
+            }
+    
+        }
+    }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    .ImageFooter{
+        width: 20%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+    .Contact{
+        margin-right: 1em;
+    }
+}
+    
+  }
+  

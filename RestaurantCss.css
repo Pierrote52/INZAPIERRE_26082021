@@ -62,7 +62,7 @@ header {
 }
 
 header .LogoBackSparow {
-  font-size: 4em;
+  font-size: 2em;
   margin-right: 20%;
   margin-left: 5%;
   color: black;
@@ -74,7 +74,7 @@ header .LogoBackSparow a {
 }
 
 header .LogoCentral img {
-  height: 5em;
+  width: 90%;
 }
 
 body {
@@ -92,7 +92,7 @@ body {
 
 .PhotoRestaurant {
   width: 100%;
-  height: 50em;
+  height: 20em;
   background-color: blue;
   position: relative;
   overflow: hidden;
@@ -100,7 +100,8 @@ body {
 
 .PhotoRestaurant img {
   position: absolute;
-  height: 100%;
+  left: -10%;
+  width: 130%;
 }
 
 .Menu {
@@ -122,12 +123,13 @@ body {
 }
 
 .Menu__NomEtCoeur {
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 2.4em;
+  font-size: 0.8em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -159,7 +161,7 @@ body {
 .Menu__NomEtCoeur__logo__ecran {
   z-index: 2;
   position: absolute;
-  background-color: white;
+  background-color: #f6f6f6;
   width: 1.8em;
   height: 2.1em;
   right: 0.2em;
@@ -182,13 +184,13 @@ body {
 
 .Menu__Cath__text {
   font-family: "RobotoLight";
-  font-size: 3.5em;
+  font-size: 1.2em;
   margin-bottom: 0em;
 }
 
 .Menu__Cath__soulignement {
   margin-top: 0em;
-  height: 10px;
+  height: 3px;
   width: 15%;
   background-color: #99e2d0;
 }
@@ -201,7 +203,7 @@ body {
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: white;
   overflow: hidden;
   -webkit-box-shadow: 0px 8px 20px #C2C2C2;
@@ -213,10 +215,14 @@ body {
           animation: animVignette 1s 300ms both ease-out;
 }
 
+.Menu__Vignette__Block {
+  width: 80%;
+}
+
 .Menu__Vignette__titre {
-  font-size: 2.5em;
+  font-size: 1em;
   font-family: "RobotoBold";
-  margin-left: 1em;
+  margin-left: 5%;
 }
 
 .Menu__Vignette__titre p {
@@ -227,12 +233,12 @@ body {
 }
 
 .Menu__Vignette__Description {
-  font-size: 2em;
+  font-size: 0.8em;
   font-family: "Roboto";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 1.2em;
+  margin-left: 1em;
   margin-top: 0em;
   white-space: nowrap;
 }
@@ -255,7 +261,7 @@ body {
 .Menu__Vignette__ValidatorEtPrix__Prix p {
   font-family: "RobotoLight";
   font-weight: 700;
-  font-size: 3em;
+  font-size: 1em;
   margin-right: 0.5em;
   margin-bottom: 20%;
 }
@@ -280,7 +286,7 @@ body {
 }
 
 .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
-  font-size: 5em;
+  font-size: 2em;
   color: white;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
@@ -297,7 +303,7 @@ body {
 }
 
 .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
-  width: 10em;
+  width: 5em;
 }
 
 .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
@@ -312,12 +318,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 90px;
-  margin-top: 3em;
-  margin-bottom: 5em;
+  margin-top: 2em;
 }
 
 .Bouton p {
-  font-size: 3em;
+  font-size: 1em;
   text-align: center;
   color: white;
   font-family: "Roboto";
@@ -332,14 +337,15 @@ footer {
 }
 
 footer .ImageFooter {
+  overflow: hidden;
   margin-top: 2em;
   margin-left: 5%;
-  height: 4em;
+  width: 90%;
 }
 
 footer .ImageFooter img {
   color: white;
-  height: 100%;
+  width: 100%;
 }
 
 footer .Proposer, footer .Partenaire, footer .Mention, footer .Contact {
@@ -361,5 +367,235 @@ footer .Proposer i, footer .Partenaire i, footer .Mention i, footer .Contact i {
 
 footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   margin-bottom: 0em;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    width: 100%;
+    margin-top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5%;
+  }
+  header .LogoBackSparow {
+    font-size: 500%;
+    margin-left: 5%;
+    color: black;
+  }
+  header .LogoBackSparow a {
+    color: black;
+    text-decoration: none;
+  }
+  header .LogoCentral {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin-right: none;
+  }
+  header .LogoCentral img {
+    width: 80%;
+  }
+  .PhotoRestaurant {
+    width: 100%;
+    height: 50em;
+  }
+  .PhotoRestaurant img {
+    left: -10%;
+    width: 120%;
+    min-height: 30em;
+  }
+  .Menu__NomEtCoeur {
+    font-size: 2em;
+  }
+  .Menu__NomEtCoeur__logo {
+    color: black;
+    position: relative;
+    font-size: 1em;
+    font-weight: 2em;
+  }
+  .Menu__NomEtCoeur__logo__ecran {
+    z-index: 2;
+    position: absolute;
+    width: 2.8em;
+    height: 2.5em;
+    right: 0.2em;
+    bottom: -1em;
+    -webkit-transition: bottom 400ms;
+    transition: bottom 400ms;
+  }
+  .Menu__NomEtCoeur__logo:hover .Menu__NomEtCoeur__logo__ecran {
+    bottom: -3.9em;
+  }
+  .Menu__NomEtCoeur i {
+    font-size: 3em;
+  }
+  .Menu__Cath {
+    margin-left: 5%;
+  }
+  .Menu__Cath__text {
+    font-size: 3.2em;
+  }
+  .Menu__Cath__soulignement {
+    width: 10%;
+  }
+  .Menu__Vignette {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 8px 20px #C2C2C2;
+            box-shadow: 0px 8px 20px #C2C2C2;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-animation: animVignette 1s 300ms both ease-out;
+            animation: animVignette 1s 300ms both ease-out;
+  }
+  .Menu__Vignette__Block {
+    width: 100%;
+  }
+  .Menu__Vignette__titre {
+    font-size: 1.6em;
+    font-family: "RobotoBold";
+    margin-left: 5%;
+  }
+  .Menu__Vignette__titre p {
+    margin-bottom: 0em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .Menu__Vignette__Description {
+    font-size: 1.3em;
+    font-family: "Roboto";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 0em;
+    white-space: nowrap;
+  }
+  .Menu__Vignette__Description p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .Menu__Vignette__ValidatorEtPrix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0em;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .Menu__Vignette__ValidatorEtPrix__Prix p {
+    font-family: "RobotoLight";
+    font-weight: 700;
+    font-size: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 20%;
+  }
+  .Menu__Vignette__ValidatorEtPrix__Validator {
+    height: 100%;
+    width: 0em;
+    background-color: #99E2D0;
+    -webkit-transition: width 300ms 100ms;
+    transition: width 300ms 100ms;
+  }
+  .Menu__Vignette__ValidatorEtPrix__Validator__Icon {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 23%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
+    font-size: 6em;
+    color: white;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  .Menu__Vignette:hover .Menu__Vignette__Block {
+    max-width: none;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: width 500ms;
+    transition: width 500ms;
+  }
+  .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
+    width: 10em;
+  }
+  .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+  .Bouton {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 90px;
+    margin-top: 2em;
+  }
+  .Bouton p {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #353535;
+    padding-top: 1em;
+    margin-top: 2em;
+    padding-bottom: 5%;
+    margin-right: 5%;
+  }
+  footer .ImageFooter {
+    overflow: hidden;
+    margin-top: 2em;
+    margin-left: 5%;
+    width: 20%;
+  }
+  footer .ImageFooter img {
+    color: white;
+    width: 100%;
+  }
+  footer .Proposer, footer .Partenaire, footer .Mention, footer .Contact {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.3em;
+    font-family: "Roboto";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5%;
+  }
+  footer .Proposer i, footer .Partenaire i, footer .Mention i, footer .Contact i {
+    margin-right: 5%;
+  }
+  footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
+    margin-bottom: 0em;
+  }
 }
 /*# sourceMappingURL=RestaurantCss.css.map */
