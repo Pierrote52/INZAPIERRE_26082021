@@ -50,6 +50,7 @@
 }
 
 header {
+  position: relative;
   width: 100%;
   margin-top: 5%;
   display: -webkit-box;
@@ -62,10 +63,10 @@ header {
 }
 
 header .LogoBackSparow {
-  font-size: 2em;
-  margin-right: 20%;
-  margin-left: 5%;
+  position: absolute;
+  font-size: 1.8em;
   color: black;
+  left: 3%;
 }
 
 header .LogoBackSparow a {
@@ -73,8 +74,13 @@ header .LogoBackSparow a {
   text-decoration: none;
 }
 
-header .LogoCentral img {
-  width: 90%;
+header .LogoCentral {
+  width: 100%;
+}
+
+header .LogoCentral__image {
+  margin-left: 25%;
+  width: 60%;
 }
 
 body {
@@ -129,11 +135,15 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 0.8em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Shrikland';
+}
+
+.Menu__NomEtCoeur h1 {
+  margin-left: -10%;
+  font-size: 1.8em;
 }
 
 .Menu__NomEtCoeur__logo {
@@ -216,11 +226,12 @@ body {
 }
 
 .Menu__Vignette__Block {
-  width: 80%;
+  width: 90%;
+  overflow: hidden;
 }
 
 .Menu__Vignette__titre {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "RobotoBold";
   margin-left: 5%;
 }
@@ -233,11 +244,8 @@ body {
 }
 
 .Menu__Vignette__Description {
-  font-size: 0.8em;
+  font-size: 1.1em;
   font-family: "Roboto";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 1em;
   margin-top: 0em;
   white-space: nowrap;
@@ -261,7 +269,7 @@ body {
 .Menu__Vignette__ValidatorEtPrix__Prix p {
   font-family: "RobotoLight";
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-right: 0.5em;
   margin-bottom: 20%;
 }
@@ -295,7 +303,7 @@ body {
 }
 
 .Menu__Vignette:hover .Menu__Vignette__Block {
-  max-width: 70%;
+  width: 60%;
   height: 100%;
   overflow: hidden;
   -webkit-transition: width 500ms;
@@ -382,8 +390,8 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     margin-bottom: 5%;
   }
   header .LogoBackSparow {
-    font-size: 500%;
-    margin-left: 5%;
+    font-size: 2em;
+    margin-left: 2%;
     color: black;
   }
   header .LogoBackSparow a {
@@ -391,13 +399,11 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     text-decoration: none;
   }
   header .LogoCentral {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    margin-right: none;
+    width: 100%;
   }
   header .LogoCentral img {
-    width: 80%;
+    margin-left: 40%;
+    width: 20%;
   }
   .PhotoRestaurant {
     width: 100%;
@@ -407,6 +413,30 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     left: -10%;
     width: 120%;
     min-height: 30em;
+  }
+  .Menu__CathegorieEntreePlat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Menu__CathegorieEntreePlat__Cathegorie {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Menu__vignette {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .Menu__NomEtCoeur {
     font-size: 2em;
@@ -523,7 +553,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
             align-items: center;
   }
   .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
-    font-size: 6em;
+    font-size: 4em;
     color: white;
     -webkit-transition: -webkit-transform 500ms;
     transition: -webkit-transform 500ms;

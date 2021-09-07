@@ -188,7 +188,7 @@ header .LogoCentral {
           justify-content: center;
 }
 
-header .LogoCentral .LogoCentral__image {
+header .LogoCentral__image {
   width: 70%;
 }
 
@@ -412,7 +412,6 @@ header .LogoCentral .LogoCentral__image {
 .Restaurants__titre {
   font-family: "RobotoBold";
   font-size: 2em;
-  margin-left: 5%;
   margin-bottom: 0em;
   background-color: #f6f6f6;
 }
@@ -564,9 +563,15 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
 
 @media screen and (min-width: 800px) {
   header .LogoCentral {
-    width: 30%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  header .LogoCentral__image {
+    width: 20%;
+  }
+  .AnimationLoadingPage {
+    top: 20%;
   }
   .AnimationLoadingPage__image {
     width: 20%;
