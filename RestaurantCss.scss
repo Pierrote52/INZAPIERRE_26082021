@@ -181,7 +181,7 @@ body{
         h1{
             flex: 2;
             margin-left: 5%;
-            font-size: 1.8em;
+            font-size: 150%;
         }
         &__logo{
 
@@ -484,7 +484,7 @@ footer{
                 margin-left: 5%;
                 &__text{
                     margin-left: 40%;
-                font-size: 1.5em;
+                font-size: 1em;
         
                 }
                 &__soulignement{
@@ -516,7 +516,7 @@ footer{
                 
                 
                     &__titre{
-                        font-size: 1.2em;
+                        font-size: 0.8em;
                         font-family: $Police1__Bold;
                         margin-left: 1em;
                         
@@ -533,7 +533,7 @@ footer{
                     }
                     &__Description{
                         
-                        font-size: 1.0em;
+                        font-size: 0.8em;
                         font-family: $Police1;
                         display: flex;
                         margin-left: 1em;
@@ -559,7 +559,7 @@ footer{
                     p{
                         font-family: $Police1__Light;
                         font-weight: 700;
-                        font-size: 1.6em;
+                        font-size: 1em;
                         margin-right: 0.5em;
                         margin-bottom: 20%;}
                     
@@ -579,7 +579,7 @@ footer{
         
                         i{
                            
-                            font-size: 3.5em;
+                            font-size: 1.5em;
                             color: white;
                             transition: transform 500ms;
                         }
@@ -598,7 +598,7 @@ footer{
                 }
         
                .Menu__Vignette__ValidatorEtPrix__Validator{
-                width: 10em;
+                width: 5em;
         }
                 .Menu__Vignette__ValidatorEtPrix__Validator__Icon{
                     i{

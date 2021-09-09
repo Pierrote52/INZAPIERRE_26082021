@@ -152,7 +152,7 @@ body {
       -ms-flex: 2;
           flex: 2;
   margin-left: 5%;
-  font-size: 1.8em;
+  font-size: 150%;
 }
 
 .Menu__NomEtCoeur__logo {
@@ -483,7 +483,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   }
   .Menu__Cath__text {
     margin-left: 40%;
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .Menu__Cath__soulignement {
     margin-left: 40%;
@@ -514,7 +514,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     width: 80%;
   }
   .Menu__Vignette__titre {
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-family: "RobotoBold";
     margin-left: 1em;
   }
@@ -525,7 +525,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     overflow: hidden;
   }
   .Menu__Vignette__Description {
-    font-size: 1.0em;
+    font-size: 0.8em;
     font-family: "Roboto";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -550,7 +550,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   .Menu__Vignette__ValidatorEtPrix__Prix p {
     font-family: "RobotoLight";
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1em;
     margin-right: 0.5em;
     margin-bottom: 20%;
   }
@@ -572,7 +572,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
             align-items: center;
   }
   .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
-    font-size: 3.5em;
+    font-size: 1.5em;
     color: white;
     -webkit-transition: -webkit-transform 500ms;
     transition: -webkit-transform 500ms;
@@ -587,7 +587,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     transition: width 500ms;
   }
   .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator {
-    width: 10em;
+    width: 5em;
   }
   .Menu__Vignette:hover .Menu__Vignette__ValidatorEtPrix__Validator__Icon i {
     -webkit-transform: rotateZ(360deg);
