@@ -482,6 +482,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     margin-left: 5%;
   }
   .Menu__Cath__text {
+    margin-top: 1em;
     margin-left: 40%;
     font-size: 1em;
   }
@@ -496,7 +497,7 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
     display: flex;
     width: 90%;
     max-width: 40em;
-    margin-top: 2em;
+    margin-top: 1.0em;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;

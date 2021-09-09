@@ -483,8 +483,9 @@ footer{
             &__Cath{
                 margin-left: 5%;
                 &__text{
+                    margin-top: 1em;
                     margin-left: 40%;
-                font-size: 1em;
+                    font-size: 1em;
         
                 }
                 &__soulignement{
@@ -501,7 +502,7 @@ footer{
                 display: flex;
                 width: 90%;
                 max-width: 40em;
-                margin-top: 2em;
+                margin-top: 1.0em;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 20px;
