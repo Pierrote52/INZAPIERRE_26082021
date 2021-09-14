@@ -576,6 +576,11 @@ footer .Proposer i, footer .Partenaire i, footer .Mention i, footer .Contact i {
   margin-right: 5%;
 }
 
+footer .Proposer a, footer .Partenaire a, footer .Mention a, footer .Contact a {
+  text-decoration: none;
+  color: white;
+}
+
 footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   margin-bottom: 0em;
 }
@@ -930,6 +935,10 @@ footer .Proposer p, footer .Partenaire p, footer .Mention p, footer .Contact p {
   }
   footer .Contact {
     margin-right: 1em;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
